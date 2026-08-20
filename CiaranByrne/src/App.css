@@ -15,6 +15,7 @@ body {
   color: var(--text);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   line-height: 1.6;
+  padding-top: 70px; /* match your header's actual height */
 }
 
 .page {
@@ -25,13 +26,21 @@ body {
 
 /* Nav */
 .nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 28px 0;
-  border-bottom: 1px solid var(--line);
+  justify-content: space-between; /* name on left, links on right */
+  padding: 1rem 2rem;
+  box-sizing: border-box;
+  
+  background: var(--bg);
+  backdrop-filter: blur(8px);
 }
-
 .nav-name {
   font-weight: 600;
   font-size: 0.95rem;
@@ -39,7 +48,7 @@ body {
 
 .nav nav {
   display: flex;
-  gap: 20px;
+  gap: 1.5rem;
 }
 
 .nav a {
