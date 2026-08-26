@@ -1,26 +1,31 @@
 import "./App.css";
 
-import diggingArt from "./assets/Heaney.jpg";
+import RidgeArt from "./assets/Ridge.jpeg";
+import SpeakUpArt from "./assets/DJ Speak Up.png"; 
+import Murphy from "./assets/Murphy.png"; 
+
 
 const tracks = [
-  { title: "Digging", artist: "Ciarán Byrne", href: "https://soundcloud.com/ciaranburn/digging", art:diggingArt },
-  { title: "Track Title Two", artist: "Artist Name", role: "Mix", href: "#"},
-  { title: "Track Title Three", artist: "Artist Name", role: "Master", href: "#"},
-  { title: "Track Title Four", artist: "Artist Name", role: "Mix & Master", href: "#"},
-  { title: "Track Title Five", artist: "Artist Name", role: "Mix", href: "#"},
+  
+  
+  { title: "Murphy", artist: "Ciarán Byrne", href: "https://www.youtube.com/watch?v=XbuJ4aNAdj4", art: Murphy },
+  { title: "Speak Up", artist: "Dylon Jack", href: "https://open.spotify.com/track/2DeF78oQSfMJe9emhrsEtl?si=b59b3f61b11842a9", art: SpeakUpArt },
+  { title: "Flow", artist: "KAZMS", href: "https://open.spotify.com/album/4wxzY9dnYvxXJLgUFusiIn?si=M3mD28FSRUqk-LIplwVCEg", art: RidgeArt },
+
 ];
 
 const rates = [
-  { label: "Mix, per track", price: "$150" },
-  { label: "Mix, EP/album (5+ tracks)", price: "$120 / track" },
-  { label: "Mastering, per track", price: "$80" },
+
+  { label: "Mix: Per track", price: "€150" },
+  { label: "Mix: EP/album (5+ tracks)", price: "€120 / track" },
+  
 ];
 
 function App() {
   return (
     <div className="page">
       <header className="nav">
-        <span className="nav-name">Ciaran Byrne</span>
+        <span className="nav-name">Slower Sounds</span>
         <nav>
           <a href="#work">Work</a>
           <a href="#rates">Rates</a>
@@ -32,9 +37,7 @@ function App() {
         <section className="hero">
           <h1>Mixing &amp; mastering for independent artists.</h1>
           <p>
-            I mix and master records for artists and producers who want their song to
-            translate everywhere — car stereo, club system, cheap earbuds. Every project
-            gets a mix built around what the song needs, not a preset chain.
+            Slower Sounds in an online based mixing service for artists.
           </p>
         </section>
 
@@ -78,15 +81,13 @@ function App() {
           <h2>Get in touch</h2>
           <ul className="contact-list">
             <li><a href="mailto:hello@ciaranbyrne.example">hello@ciaranbyrne.example</a></li>
-            <li><a href="#">https://www.instagram.com/ciaran_byrne_music/</a></li>
-            <li><a href="#">https://soundcloud.com/ciaranburn</a></li>
-            <li><a href="#">https://www.youtube.com/@ciaran_byrne_music</a></li>
+            
           </ul>
         </section>
       </main>
 
       <footer>
-        <span>Ciaran Byrne — Mixing &amp; Mastering</span>
+        <span>Slower Sounds - 2026</span>
       </footer>
     </div>
   );
