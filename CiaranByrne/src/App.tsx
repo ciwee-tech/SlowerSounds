@@ -37,7 +37,7 @@ function App() {
         <section className="hero">
           <h1>Mixing &amp; mastering for independent artists.</h1>
           <p>
-            Slower Sounds in an online based mixing service for artists.
+            What's your earliest musical memory?
           </p>
         </section>
 
