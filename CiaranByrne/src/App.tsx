@@ -1,8 +1,11 @@
 import "./App.css";
 
-import RidgeArt from "./assets/Ridge.jpeg";
-import SpeakUpArt from "./assets/DJ Speak Up.png"; 
-import Murphy from "./assets/Murphy.png"; 
+import RidgeArt from "./assets/Ridge.avif";
+import SpeakUpArt from "./assets/DJ Speak Up.avif"; 
+import Murphy from "./assets/Murphy.avif"; 
+import milk from "./assets/Milk.avif";
+import troy from "./assets/troy.avif";
+import displaced from "./assets/displaced.avif";
 
 
 const tracks = [
@@ -11,14 +14,25 @@ const tracks = [
   { title: "Murphy", artist: "Ciarán Byrne", href: "https://www.youtube.com/watch?v=XbuJ4aNAdj4", art: Murphy },
   { title: "Speak Up", artist: "Dylon Jack", href: "https://open.spotify.com/track/2DeF78oQSfMJe9emhrsEtl?si=b59b3f61b11842a9", art: SpeakUpArt },
   { title: "Flow", artist: "KAZMS", href: "https://open.spotify.com/album/4wxzY9dnYvxXJLgUFusiIn?si=M3mD28FSRUqk-LIplwVCEg", art: RidgeArt },
-
+  { title: "I Hate the Way You're Looking at Me (lately)", artist: "Milk.", href: "https://open.spotify.com/track/41twsLN7mBObtriZrlNM6y?si=c1a96b48ac724096", art: milk },
+  { title: "Troy", artist: "KAZMS", href: "https://open.spotify.com/track/62OSzdBHIzLhndWn3Slv5N?si=18822bd655e44914", art: troy },
+  { title: "Displaced", artist: "Ignatious", href: "https://open.spotify.com/track/6hGn1NxbDvbLuBgGotnSMw?si=7229d1a32212489a", art: displaced }
 ];
+const about = {
+  title: "Who is Slower Sounds?",
+  text: "Slower Sounds is operated by Ciarán Byrne. Raised in Dublin, Ireland, Ciarán has a wide variety of musical experiences spanning 15+ Years. From early days rock shows to experimental collaborations in a filled out auditorium, with productions that have featured on Spotify's Viral Hits and New Music Friday UK, Ciarán is on a quest for finding the sounds that inspire and ignite us.",
+  title2: "Why Slower Sounds?",
+  text2: "“My first musical memory was listening to Voodoo Child by Jimi Hendrix in the back of my dad’s car. My dad told me that Jimi Hendrix once set his guitar on fire on stage before he died. This imagery paired with the sounds of Hendrix completely blew my young mind open and stuck with me ever since. Inspired by long music filled road trips I chose the name Slower Sounds.”-Ciarán Byrne"
+}
+
+
+
 
 const rates = [
 
   { label: "Mix: Per track", price: "€150" },
-  { label: "Mix: EP/album (5+ tracks)", price: "€120 / track" },
-  
+  { label: "Mix: EP/album (3+ tracks)", price: "€120 / track" },
+  { label: "Any other Projects", price: "please contact for a quote" }
 ];
 
 function App() {
@@ -35,9 +49,9 @@ function App() {
 
       <main>
         <section className="hero">
-          <h1>Mixing &amp; mastering for independent artists.</h1>
+          <h1>Providing artist and labels with release-ready mixes; working alongside you with a focus on high quality sonics, patience and on-schedule deliverables. </h1>
           <p>
-            What's your earliest musical memory?
+      
           </p>
         </section>
 
@@ -62,6 +76,13 @@ function App() {
           </ul>
         </section>
 
+        <section id="about">
+          <h2>{about.title}</h2>
+          <p>{about.text}</p>
+          <h3>{about.title2}</h3>
+          <p>{about.text2}</p>
+        </section>
+
         <section id="rates">
           <h2>Rates</h2>
           <ul className="rate-list">
@@ -73,7 +94,7 @@ function App() {
             ))}
           </ul>
           <p className="rates-note">
-            Starting points — every project is quoted after hearing the material.
+            
           </p>
         </section>
 
