@@ -4,8 +4,8 @@ import RidgeArt from "./assets/Ridge.avif";
 import SpeakUpArt from "./assets/DJ Speak Up.avif"; 
 import Murphy from "./assets/Murphy.avif"; 
 import milk from "./assets/Milk.avif";
-import troy from "./assets/troy.avif";
-import displaced from "./assets/displaced.avif";
+import troy from "./assets/Troy.avif";
+import displaced from "./assets/Displaced.avif";
 
 
 const tracks = [
