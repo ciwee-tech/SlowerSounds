@@ -101,7 +101,7 @@ function App() {
         <section id="contact">
           <h2>Get in touch</h2>
           <ul className="contact-list">
-            <li><a href="mailto:hello@ciaranbyrne.example">hello@ciaranbyrne.example</a></li>
+            <li><a href="mailto:hello@ciaranbyrne.example">slowersounds@protonmail.com</a></li>
             
           </ul>
         </section>
