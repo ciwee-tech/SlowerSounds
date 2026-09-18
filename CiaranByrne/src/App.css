@@ -42,7 +42,7 @@ body {
   padding: 1rem 2rem;
   box-sizing: border-box;
   
-  background: var(--beige);
+  background: var(--bg);
   backdrop-filter: blur(8px);
 }
 .nav-name {
