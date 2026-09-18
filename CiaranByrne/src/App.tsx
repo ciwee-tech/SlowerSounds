@@ -1,5 +1,7 @@
 import "./App.css";
 
+import logo from "./assets/Logotipo_SlowerSounds_Positivo_RGB.png";
+
 import RidgeArt from "./assets/Ridge.avif";
 import SpeakUpArt from "./assets/DJ Speak Up.avif"; 
 import Murphy from "./assets/Murphy.avif"; 
@@ -20,9 +22,8 @@ const tracks = [
 ];
 const about = {
   title: "Who is Slower Sounds?",
-  text: "Slower Sounds is operated by Ciarán Byrne. Raised in Dublin, Ireland, Ciarán has a wide variety of musical experiences spanning 15+ Years. From early days rock shows to experimental collaborations in a filled out auditorium, with productions that have featured on Spotify's Viral Hits and New Music Friday UK, Ciarán is on a quest for finding the sounds that inspire and ignite us.",
-  title2: "Why Slower Sounds?",
-  text2: "“My first musical memory was listening to Voodoo Child by Jimi Hendrix in the back of my dad’s car. My dad told me that Jimi Hendrix once set his guitar on fire on stage before he died. This imagery paired with the sounds of Hendrix completely blew my young mind open and stuck with me ever since. Inspired by long music filled road trips I chose the name Slower Sounds.”-Ciarán Byrne"
+  text: "Slower Sounds is operated by Ciarán Byrne. Raised in Dublin, Ireland, Ciarán has a wide variety of musical experiences spanning 15+ Years. From early days rock shows to experimental collaborations in a filled out auditoriums. With productions that have featured on Spotify's Viral Hits and New Music Friday UK, Ciarán is on a quest for finding the sounds that inspire and ignite us.",
+
 }
 
 
@@ -32,14 +33,14 @@ const rates = [
 
   { label: "Mix: Per track", price: "€150" },
   { label: "Mix: EP/album (3+ tracks)", price: "€120 / track" },
-  { label: "Any other Projects", price: "please contact for a quote" }
+  { label: "Any other Projects:", price: "Please contact for a quote" }
 ];
 
 function App() {
   return (
     <div className="page">
       <header className="nav">
-        <span className="nav-name">Slower Sounds</span>
+        <img className="nav-logo" src={logo} alt="Slower Sounds Logo" />
         <nav>
           <a href="#work">Work</a>
           <a href="#rates">Rates</a>
@@ -79,8 +80,7 @@ function App() {
         <section id="about">
           <h2>{about.title}</h2>
           <p>{about.text}</p>
-          <h3>{about.title2}</h3>
-          <p>{about.text2}</p>
+
         </section>
 
         <section id="rates">

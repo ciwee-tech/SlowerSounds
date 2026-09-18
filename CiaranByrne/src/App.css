@@ -4,6 +4,10 @@
   --dim: #7e7e7e;
   --line: #0f100f;
   --accent: #e8a33d;
+  --red: #ec6063;
+  --orange: #f49a67;
+  --beige: #fde5d2;
+  --navy: #56628d;
 }
 
 * {
@@ -11,7 +15,7 @@
 }
 
 body {
-  background: var(--bg);
+  background: var(--beige);
   color: var(--text);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   line-height: 1.6;
@@ -38,7 +42,7 @@ body {
   padding: 1rem 2rem;
   box-sizing: border-box;
   
-  background: var(--bg);
+  background: var(--beige);
   backdrop-filter: blur(8px);
 }
 .nav-name {
@@ -52,15 +56,19 @@ body {
 }
 
 .nav a {
-  color: var(--dim);
+  color: var(--line);
   text-decoration: none;
   font-size: 0.9rem;
 }
 
 .nav a:hover {
-  color: var(--text);
+  color: var(--red);
 }
-
+.nav-logo {
+  width: 250px;
+  height: auto;
+  display: block;
+}
 /* Hero */
 .hero {
   padding: 64px 0 48px;
@@ -68,12 +76,13 @@ body {
 }
 
 .hero h1 {
-  color: var(--line);
+  color: var(--navy);
+  font-family: var(--Zalando-Sans);
   font-size: 1.8rem;
   font-weight: 600;
-  line-height: 1.3;
+  line-height: 1.4;
   margin-bottom: 20px;
-  max-width: 22ch;
+  max-width: 20ch;
   margin-left: auto;
   margin-right: auto; 
 }
@@ -93,11 +102,12 @@ section {
 }
 
 h2 {
-  font-size: 1rem;
+  font-size: 1.1rem;
+  font-family: var(--Zalando-Sans);
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  color: var(--dim);
+  color: var(--navy);
   margin-bottom: 24px;
   text-align: center;
 }
@@ -107,7 +117,7 @@ h2 {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  color: var(--dim);
+  color: var(--red);
   margin-top: 24px;
   margin-bottom: 12px;
   text-align: center;
@@ -116,6 +126,7 @@ h2 {
 /* Track list */
 .track-list {
   list-style: none;
+  padding: 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1px;
@@ -132,11 +143,11 @@ h2 {
   gap: 16px;
   padding: 16px 0;
   text-decoration: none;
-  color: var(--text);
+  color: var(--navy);
 }
 
 .track-list a:hover .track-title {
-  color: var(--accent);
+  color: var(--navy);
 }
 
 .track-title {
@@ -239,7 +250,7 @@ footer {
   align-items: center;
   text-align: center;
   text-decoration: none;
-  color: var(--text);
+  color: var(--line);
 }
 
 .track-art {
@@ -247,7 +258,7 @@ footer {
   aspect-ratio: 1 / 1;
   object-fit: cover;
   border-radius: 2px;
-  margin-bottom: 4px;
+  margin-bottom: 2px;
   
 
 }
@@ -269,7 +280,7 @@ footer {
 }
 
 .track-title {
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 500;
 }
 
@@ -279,7 +290,7 @@ footer {
 }
 
 .track-list a:hover .track-title {
-  color: var(--accent);
+  color: var(--red);
 }
 
 @media (max-width: 540px) {
